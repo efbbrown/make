@@ -1,0 +1,12 @@
+Package: make
+Type: Package
+Title: Effective cache mechanism for rds files
+Version: 0.1
+Date: 2015-11-10
+Author: Derek Slone-Zhen
+Maintainer: Derek Slone-Zhen, Eugene Brown <EFBrown@Seven.com.au>
+Description: The make() function builds & saves .rds files with some in-built
+    sanity checking functions
+License: ???
+LazyData: TRUE
+RoxygenNote: 5.0.0

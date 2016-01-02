@@ -1,0 +1,17 @@
+{
+    "contents" : "Package: make\nType: Package\nTitle: Effective cache mechanism for rds files\nVersion: 0.1\nDate: 2015-11-10\nAuthor: Derek Slone-Zhen\nMaintainer: Derek Slone-Zhen, Eugene Brown <EFBrown@Seven.com.au>\nDescription: The make() function builds & saves .rds files with some in-built\n    sanity checking functions\nLicense: ???\nLazyData: TRUE\nRoxygenNote: 5.0.0\n",
+    "created" : 1447125161827.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1911786237",
+    "id" : "2AAD1C21",
+    "lastKnownWriteTime" : 1447126502,
+    "path" : "C:/RedFusion/Projects/Sandpit/Packages/make/DESCRIPTION",
+    "project_path" : "DESCRIPTION",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "dcf"
+}

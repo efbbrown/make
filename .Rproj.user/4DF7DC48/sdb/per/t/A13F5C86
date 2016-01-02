@@ -1,0 +1,18 @@
+{
+    "contents" : "#' Make a .rds file\n#'\n#' Makes a .rds file according to a builder function & a recency requirement\n#'\n#' @param cache.file The file to be made\n#' @param builder The builder function\n#' @param verbose Should I be verbose?\n#' @param max.age If the .rds file exists and is younger than the max.age, skip the builder function\n#' @param ... Additional parameters to be evaluated in the builder function\n#'\n#' @return An R data object\n#'\n#' @examples\n#'\n#' @export\nmake <- function(cache.file, builder = NULL, verbose = FALSE, max.age=as.difftime(7,units='days'), ...) {\n  cache.file <- paste0(cache.file,'.rds')\n  if (!file.exists(cache.file)) return (try_make(cache.file, builder, verbose, fatal=TRUE, ...))\n  if (difftime(Sys.time(),file.info(cache.file)$mtime, units='days') > max.age) {\n    obj <- try_make(cache.file, builder, verbose)\n    if (!'error' %in% class(obj)) return(obj)\n  }\n  if (verbose==TRUE) cat(\"Reading \",cache.file,\"\\n\")\n  return (readRDS(file=cache.file))\n}\n",
+    "created" : 1447125204950.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "15|105|24|0|\n",
+    "hash" : "1496006637",
+    "id" : "A13F5C86",
+    "lastKnownWriteTime" : 1447126353,
+    "path" : "C:/RedFusion/Projects/Sandpit/Packages/make/R/make.R",
+    "project_path" : "R/make.R",
+    "properties" : {
+        "tempName" : "Untitled2"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

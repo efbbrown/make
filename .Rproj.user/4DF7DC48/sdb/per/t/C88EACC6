@@ -1,0 +1,18 @@
+{
+    "contents" : "library(makeR)\n\ntest <- make(\"test\", function() {\n\n  require(data.table)\n\n  dt <- data.table(c1 = 1:20,\n                   c2 = c(\"foo\", \"bar\"),\n                   c3 = runif(n = 20, 100, 200)\n                   )\n\n}, max.age = as.difftime(30, units = \"secs\"))\n",
+    "created" : 1447126009954.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "80337669",
+    "id" : "C88EACC6",
+    "lastKnownWriteTime" : 1447126207,
+    "path" : "C:/RedFusion/Projects/Sandpit/Packages/make/test.R",
+    "project_path" : "test.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
