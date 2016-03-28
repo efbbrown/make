@@ -9,4 +9,4 @@ Description: The make() function builds & saves .rds files with some in-built
     sanity checking functions
 License: ???
 LazyData: TRUE
-RoxygenNote: 5.0.0
+RoxygenNote: 5.0.1
