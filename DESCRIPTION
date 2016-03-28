@@ -1,7 +1,7 @@
 Package: make
 Type: Package
 Title: Effective cache mechanism for rds files
-Version: 0.1
+Version: 0.2
 Date: 2015-11-10
 Author: Derek Slone-Zhen, Eugene Brown
 Maintainer: Eugene Brown <efbbrown@gmail.com>
