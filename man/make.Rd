@@ -8,7 +8,7 @@ make(cache.file, builder = NULL, verbose = FALSE, max.age = as.difftime(7,
   units = "days"), ...)
 }
 \arguments{
-\item{cache.file}{The file to be made}
+\item{cache.file}{The name of the file to be made or loaded, without}
 
 \item{builder}{The builder function}
 
@@ -22,7 +22,9 @@ make(cache.file, builder = NULL, verbose = FALSE, max.age = as.difftime(7,
 An R data object
 }
 \description{
-Makes a .rds file according to a builder function & a recency requirement
+Makes a .rds file according to a builder function & a recency requirement.
+If the file already exists & the build function throws an error load the file
+instead.
 }
 \examples{
 
