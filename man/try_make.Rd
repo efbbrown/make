@@ -23,7 +23,4 @@ Something
 \description{
 Help do what make() does
 }
-\examples{
-
-}
 

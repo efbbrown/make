@@ -10,9 +10,6 @@
 #'
 #' @return Something
 #'
-#' @examples
-#'
-#' @export
 try_make <- function(cache.file, builder, verbose = FALSE, fatal=FALSE, ...) {
   if (is.null(builder)) stop(paste0("Need Builder function for: ",cache.file))
   if (verbose==TRUE) cat("Making ",cache.file,"\n")
